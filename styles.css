@@ -1,0 +1,203 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+font-family: 'Oswald', sans-serif;
+background-color: rgb(18, 231, 114);
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%236117d9' fill-opacity='0.5' fill-rule='nonzero'%3E%3Cpath d='M29 58.58l7.38-7.39A30.95 30.95 0 0 1 29 37.84a30.95 30.95 0 0 1-7.38 13.36l7.37 7.38zm1.4 1.41l.01.01h-2.84l-7.37-7.38A30.95 30.95 0 0 1 6.84 60H0v-1.02a28.9 28.9 0 0 0 18.79-7.78L0 32.41v-4.84L18.78 8.79A28.9 28.9 0 0 0 0 1.02V0h6.84a30.95 30.95 0 0 1 13.35 7.38L27.57 0h2.84l7.39 7.38A30.95 30.95 0 0 1 51.16 0H60v27.58-.01V60h-8.84a30.95 30.95 0 0 1-13.37-7.4L30.4 60zM29 1.41l-7.4 7.38A30.95 30.95 0 0 1 29 22.16 30.95 30.95 0 0 1 36.38 8.8L29 1.4zM58 1A28.9 28.9 0 0 0 39.2 8.8L58 27.58V1.02zm-20.2 9.2A28.9 28.9 0 0 0 30.02 29h26.56L37.8 10.21zM30.02 31a28.9 28.9 0 0 0 7.77 18.79l18.79-18.79H30.02zm9.18 20.2A28.9 28.9 0 0 0 58 59V32.4L39.2 51.19zm-19-1.4a28.9 28.9 0 0 0 7.78-18.8H1.41l18.8 18.8zm7.78-20.8A28.9 28.9 0 0 0 20.2 10.2L1.41 29h26.57z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+color: cornflowerblue;
+background-color: #b087ec;
+font-size: 16px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+ul {
+list-style: none;
+
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+/* Estilos de Navegacion*/
+.nav-main{
+ font-size: 17px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ height: 60px;
+ padding: 20px 0;
+}
+
+.nav-brand{
+    width: 50px;
+}
+/*Navegacion izquierda*/
+.nav-main ul{
+    display: flex;
+}
+.nav-main ul li{
+    padding: 10px;
+}
+
+.nav-main ul li a{
+    border-bottom: 2px;
+}
+.nav-main ul li a:hover{
+    border-bottom: 2px solid white;
+}
+.nav-main ul.nav-menu{
+    flex: 1;
+    margin-left: 20px;
+
+}
+
+hr {
+    margin: 10px 0;
+  }
+  
+  /* Responsive Button */
+  .menu-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    z-index: 2;
+  color: #262626;
+  display: none;
+  }
+  
+  /* SHOWCASE */
+  
+  .btn {
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: #262626;
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid #fff;
+  }
+  
+  .btn:hover {
+    opacity: 0.9;
+  }
+  
+
+.showcase{
+    width: 100%;
+    height: 550px;
+    color: rgb(0, 0, 0);
+    background: url(./img/pexels-panumas-nikhomkhai-1148820.jpg) no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-end;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.showcase h2,
+.showcase p {
+  margin-bottom: 10px;
+}
+
+.showcase .btn {
+  margin-top: 20px;
+}
+/*COLUMANS*/
+.COLUM{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin: 70px 0;
+    padding: 10px 20px;
+    border: 5px solid #ffff;
+    margin: 10px 0;
+}
+.COLUM img{
+width: 100%;
+height: 180px;
+}
+.COLUM h3{
+    font-size: 20px; 
+    margin: 10px 0;
+}
+.COLUM h3,p{
+color: rgb(3, 3, 3);
+}
+
+.COLUM a{
+    padding: 10px 0;
+    color: rgb(255, 2, 2);
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: bold;
+}
+.COLUM a:hover{
+    text-decoration:underline;
+}
+
+@media(max-width: 700px){
+
+    .menu-btn{
+     display: block;   
+    }
+.nav-main ul.nav-menu{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #2f3640;
+    height: 100%;
+    opacity: 0.9;
+    padding: 30px;
+    transform: translateX(-400px);
+    border-right: #ccc 1px solid;
+    width: 50%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.nav-main ul.nav-menu.show{
+    transform: translatex(-20px);
+}
+.nav-main ul.nav-menu li {
+    padding: 20px; 
+    font-size: 14px;
+  }
+
+.nav-main ul.nav-menu-right{
+    margin-right: 50px;
+}
+.COLUM{
+       grid-template-columns: repeat(1, 1fr);
+   }
+
+} 
+
+.CORREOS{
+    width: 100%;
+    height: 550px;
+    color: rgb(26, 23, 23);
+    background: url(./img/imagesCORREO.jpg) no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-end;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+    color: #fff;
+}

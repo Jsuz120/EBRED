@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+}
+
+header{
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.507) 0%, rgba(0, 0, 0, 0.493) 100%),
+    url(../img/fibra.jpeg), radial-gradient(at top center, rgba(255,255,255,0.40) 0%,
+     rgba(0,0,0,0.40) 120%) #989898;
+    background-blend-mode: multiply,multiply;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.head{
+    text-align: center;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.Fibra{
+    position: fixed;
+    z-index: 10;
+    top: 30px;
+    right: 30px;
+    background: white;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgb(3, 255, 255);
+}
+
+.temas-nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30vw;
+    height: 100%;
+    background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: transform .3s ease-in-out;
+    transform: translate(110%);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    
+}
+
+.spread{
+    transform: translate(0);
+}
+
+.temas-nav a{
+    margin-bottom: 7px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.titulo{
+    font-size: 120px;
+    margin-bottom: 30px;
+}
+
+.copy{
+    font-weight: 300;
+    font-size: 25px;
+}
+
+/*Temas*/
+.subtitulo{
+    text-align: center;
+    font-weight: 300;
+    color: rgb(92, 4, 143);
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+.Conectores_fibra{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.Conectores_fibra img{
+    display:block;
+    margin:auto;
+}
+.contenedor-pulidos img{
+    display:block;
+    margin:auto;
+}
+.contenedor img{
+    display:block;
+    margin:auto;
+}
+.n-tema1{
+    margin-bottom: 7px;
+    color:rgb(167, 9, 132);
+}
+
+.n-tema2{
+    margin-bottom: 7px;
+    color:rgb(0, 0, 0);
+}
+
+.contenedor img{
+    /*cursor: pointer;*/
+    background-position: center;
+}
+
+table{
+    border-collapse: collapse;
+}
+thead{
+    background-color: rgb(255, 75, 4);
+}
+
+tr:nth-of-type(1) > td,
+tr:nth-of-type(2) > td,
+tr:nth-of-type(3) > td,
+tr:nth-of-type(4) > td,
+tr:nth-of-type(5) > td,
+tr:nth-of-type(6) > td,
+tr:nth-of-type(7) > td{
+    text-align: center;
+    background-color: rgb(252, 255, 104);
+    /*font-weight: bold;*/
+}

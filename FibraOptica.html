@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibra Óptica</title>
+    <link rel="stylesheet" href="css/estiloFibra.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300;1,700&display=swap" rel="stylesheet"> 
+
+</head>
+<body>
+    <header class="header" id="inicio">
+        <img src="img/temas.svg" alt="" class="Fibra">
+        <nav class="temas-nav">
+            <a href="#inicio">Inicio</a>
+            <a href="#tema1">Tipos de conectores de fibra óptica</a>
+            <a href="#tema2">Tipos de pulidos</a>
+            <a href="#tema3">Norma TIA-598-C</a>
+            <a href="#tema4">Colores de los conectores de fibra óptica</a>
+        </nav>
+        <div class="contenedor head">
+            <h1 class="titulo">Fibra óptica</h1>
+            <p class="copy">
+                La fibra óptica es un medio físico de transmisión de información, consiste en un filamento 
+                delgado de vidrio o de plástico, a través del cual viajan pulsos de luz láser o led, en la 
+                cual se contienen los datos a transmitir.
+            </p>
+        </div>
+    </header>
+    <main>
+        <section class="temas contenedor" id="tema1">
+            <h2 class="subtitulo">Tipos de conectores de fibra ótica</h2>
+                <div class="Conectores_fibra">
+                    <p class="n-tema2">Las siglas SC, LC, FC y ST corresponden a los tipos de conector óptico más comunes en aplicaciones FTTH y en redes de datos.</p>
+                    <img src="img/Conectores.png" alt="">
+                    <div class="tema1">
+                        <h3 class="n-tema1">Conector FC. Conector de Ferrule (Ferrule Connector).</h3>
+                        <p>Es un conector roscado con una fijación muy resistente a vibraciones. Se utiliza en aplicaciones sometidas a movimiento, en los instrumentos de precisión (como los OTDR) y es muy popular en CATV. Para fibras monomodo. Sus pérdidas de inserción alcanzan los 0,3 dB.</p>
+                    </div>
+                    <div class="tema1">
+                        <h3 class="n-tema1">Conector ST. Punta Recta (Straight Tip).</h3>
+                        <p>Es similar en forma al conector FC, pero su ajuste es similar al de un conector BNC (montura en bayoneta). Se utiliza en fibras multimodo. Sus pérdidas de inserción rondan los 0,25 dB.</p>
+                    </div>
+                    <div class="tema1">
+                        <h3 class="n-tema1">Conector LC. Conector lucent (Lucent Connector) o Conector pequeño (Little Connector).</h3>
+                        <p>Ajuste similar a un RJ45 (tipo push and pull). Más seguro y compacto que el SC, así que permite incluso mayores densidades de conectores en racks, paneles y FTTH. Para fibras monomodo y multimodo. Pérdidas de 0,10 dB.</p>
+                    </div>
+                    <div class="tema1">
+                        <h3 class="n-tema1">Conector SC. Conector de suscriptor (Suscriptor Connector) o Conector Cuadrado (Square Connector).</h3>
+                        <p>Ajuste rápido a presión. Es compacto, permitiendo integrar gran densidad de conectores por instrumento. Se utiliza en FTTH, telefonía, televisión por cable, etc. Para fibras monomodo y multimodo. Pérdidas de 0,25 dB.</p>
+                    </div>
+                </div>
+        </section>
+        <section class="pulidos" id="tema2">
+            <div class="contenedor">
+                <h2 class="subtitulo">Tipos de pulidos</h2>
+                <div class="contenedor-pulidos">
+                    <img src="img/Ferrule.png" alt="">
+                    <p class="n-tema2">En relación a la nomenclatura PC/UPC/APC, son siglas que mencionan al tipo de pulido del terminal óptico (ferrule) que hace viable el paso de pulsos de luz láser entre dos conector fibra ópticas.</p>
+                    <p class="n-tema2">Un habitual latiguillo de FTTH terminado en SC/APC tiene relación a un conector SC que tiene un pulido APC.</p>
+                    <div class="Pulidos_fibra">
+                        <div class="tema2">
+                            <h3 class="n-tema1">PC. Contacto físico (Physical Contact). </h3>
+                            <p class="n-tema2">El ferrule está biselado y rematado en una superficie plana. Esto evita espacios vacíos entre los ferrules de los conectores que se están acoplando y logra unas pérdidas de retorno entre los -30 dB y los -40 dB.</p>
+                        </div>
+                        <div class="tema1">
+                            <h3 class="n-tema1">UPC. Ultra contacto físico (Ultra Physical Contact). </h3>
+                            <p class="n-tema2">Similares a los PC, logran reducir las pérdidas de retorno a un margen entre los -40 y los -55 dB gracias a que el bisel tiene una curva más pronunciada. Utilizado últimamente en líneas muertas para que los operadores de telecomunicaciones lleven a cabo pruebas de red por ejemplo con OTDR.</p>
+                        </div>
+                        <div class="tema1">
+                            <h3 class="n-tema1">APC. Contacto físico en ángulo (Angled Physical Contact). </h3>
+                            <p class="n-tema2">El ferrule termina en una superficie plana y a su vez inclinada 8 grados. Se trata del conector que logra un enlace óptico de mayor calidad ya que consigue reducir las pérdidas de retorno hasta los -60 dB aumentando así el número de usuarios en fibras monomodo. APC se ha convertido en el tipo de pulido más utilizado.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="Norma" id="tema3">
+            <div class="contenedor">
+                <h2 class="subtitulo">Fibra óptica según la norma TIA-598-C</h2>
+                <p>La Asociación de la Industria de Telecomunicaciones creó la norma TIA-598-C, esta norma proporciona toda la información necesaria para la codificación por colores de cables de fibra óptica de una manera uniforme. Define los esquemas de identificación para fibras, fibras amortiguadas, unidades de fibra y grupos de unidades de fibra dentro de los cables de fibra óptica fuera de la planta y las instalaciones. Permite identificar las unidades de fibra mediante una leyenda impresa. La leyenda contendrá un número y / o color de posición numérico impreso correspondiente para su uso en la identificación. </p>
+                <p>Dentro de los tubos de protección de los cables de fibra óptica, también podemos tener códigos de colores, para identificar cada hilo individual. La notación TIA598 es la más popular y es como sigue:</p>
+                <img src="img/colores.png" alt="">
+            </div>
+        </section>
+        <section class="Colores" id="tema4">
+            <div class="contenedor">
+                <h2 class="subtitulo">Tabla de colores de los conectores de fibra óptica</h2>
+                <table border="1" style="margin: 0 auto;"">
+                    <thead>
+                        <th>Tipo de fibra óptica</th>
+                        <th>Color del conector</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>62.5/125</td>
+                            <td>Beige</td>
+                        </tr>
+                        <tr>
+                            <td>50/125</td>
+                            <td>Negro</td>
+                        </tr>
+                        <tr>
+                            <td>50/125 laser optimized</td>
+                            <td>Aguamarina</td>
+                        </tr>
+                        <tr>
+                            <td>OM5</td>
+                            <td>Lima</td>
+                        </tr>
+                        <tr>
+                            <td>Monomodo</td>
+                            <td>Azul</td>
+                        </tr>
+                        <tr>
+                            <td>Monomodo con pulido APC</td>
+                            <td>Verde</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        
+    </main>
+
+    <script src="js/temas.js"></script>
+</body>
+</html>
